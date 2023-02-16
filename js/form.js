@@ -62,7 +62,7 @@ document.querySelector("#submit").addEventListener("click", e => {
   *Asistencia*%0A
   *Niños:*  
   ${cliente}%0A
-  *Jovenes:* 
+  *Jóvenes:* 
   ${joven}%0A
   *Adultos:* 
   ${hora}%0A
