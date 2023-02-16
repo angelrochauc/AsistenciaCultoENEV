@@ -72,7 +72,7 @@ document.querySelector("#submit").addEventListener("click", e => {
   ${empleado}%0A
   *Fecha:* 
   ${fecha}%0A
-  *Servicio:* 
+  *Hora:* 
   ${servicio}`;
 
   if (cliente === "" || joven === "") {
