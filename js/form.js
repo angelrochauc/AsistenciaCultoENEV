@@ -43,7 +43,7 @@ document.querySelector("#submit").addEventListener("click", e => {
 
   //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
   const telefono = "573104866092";
-const imagen = document.querySelector("#imagen").innerHTML;
+
   const cliente = document.querySelector("#niños").value;
   const joven = document.querySelector("#joven").value;
   const total = document.querySelector("#total").value;
@@ -60,8 +60,6 @@ const imagen = document.querySelector("#imagen").innerHTML;
 
   const url = `https://api.whatsapp.com/send?phone=${telefono}&text=
   *Asistencia*%0A
-  
-  ${imagen}%0A
   *Fecha:* 
   ${fecha}%0A
   *Hora:* 
