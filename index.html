@@ -43,15 +43,15 @@
       <div class="col-xs-6">
 
         <label for="cliente" class="formulario__label">Niños:</label>
-        <input id="niños" type="number" class="formulario__input" oninput="sumar()" />
+        <input id="niños" type="number" class="formulario__input" oninput="sumar()" min="0" pattern="^[0-9]+" />
       </div>
       <div class="col-xs-6">
         <label for="joven" class="formulario__label">Jóvenes:</label>
-        <input id="joven" type="number" class="formulario__input" oninput="sumar()" />
+        <input id="joven" type="number" class="formulario__input" oninput="sumar()" min="0" pattern="^[0-9]+" />
       </div>
       <div class="col-xs-6">
         <label for="hora" class="formulario__label">Adultos:</label>
-        <input id="hora" type="number" class="formulario__input" oninput="sumar()" />
+        <input id="hora" type="number" class="formulario__input" oninput="sumar()" min="0" pattern="^[0-9]+" />
       </div>
       <div class="col-xs-6">
         <label for="total" class="formulario__label">Total:</label>
