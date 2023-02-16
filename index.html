@@ -31,6 +31,16 @@
     <h3 class="formulario__subtitulo">ICC Chapinero</h3>
     <div class="row">
       <div class="col-xs-6">
+       <!--HORA-->
+    <label for="servicio" class="formulario__label">Servicio:</label>
+    <p id="servicio">--:--:--</p>
+        </div>
+         <div class="col-xs-6">
+        <!--fecha-->
+        <label for="fecha" class="formulario__label">Fecha:</label>
+        <p id="fecha">---</p>
+      </div>
+      <div class="col-xs-6">
 
         <label for="cliente" class="formulario__label">Niños:</label>
         <input id="niños" type="number" class="formulario__input" oninput="sumar()" />
@@ -47,11 +57,7 @@
         <label for="total" class="formulario__label">Total:</label>
         <input id="total" type="number" class="formulario__input" readonly />
       </div>
-      <div class="col-xs-6">
-        <!--fecha-->
-        <label for="fecha" class="formulario__label">Fecha:</label>
-        <p id="fecha">---</p>
-      </div>
+   
       <div class="col-xs-6">
         <label for="empleado" class="formulario__label">Coodinador:</label>
         <select id="empleado" name="listaempleados" class="formulario__input">
@@ -64,9 +70,7 @@
         </select>
       </div>
     </div>
-    <!--HORA-->
-    <label for="servicio" class="formulario__label">Servicio:</label>
-    <p id="servicio">--:--:--</p>
+   
 
 
 
