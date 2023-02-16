@@ -43,7 +43,7 @@ document.querySelector("#submit").addEventListener("click", e => {
 
   //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
   const telefono = "573104866092";
-
+const imagen = document.querySelector("#imagen").value;
   const cliente = document.querySelector("#niños").value;
   const joven = document.querySelector("#joven").value;
   const total = document.querySelector("#total").value;
@@ -60,6 +60,8 @@ document.querySelector("#submit").addEventListener("click", e => {
 
   const url = `https://api.whatsapp.com/send?phone=${telefono}&text=
   *Asistencia*%0A
+  
+  ${imagen}%0A
   *Fecha:* 
   ${fecha}%0A
   *Hora:* 
@@ -75,7 +77,7 @@ document.querySelector("#submit").addEventListener("click", e => {
   *Coodinador:* 
   ${empleado}`;
 
-  if (cliente === "" || joven === "") {
+  if (cliente === "" || joven === "" || hora === "") {
       resp.classList.add("fail");
       resp.innerHTML = `Faltan algunos datos`;
       return false;
