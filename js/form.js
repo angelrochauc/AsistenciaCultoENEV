@@ -59,7 +59,7 @@ document.querySelector("#submit").addEventListener("click", e => {
   console.log(hora);
 
   const url = `https://api.whatsapp.com/send?phone=${telefono}&text=
-  *Asistencia*%0A
+  *Hola, Pator Luis Carlos Millan Envio Asistencia*%0A
   *Fecha:* 
   ${fecha}%0A
   *Hora:* 
