@@ -43,7 +43,7 @@ document.querySelector("#submit").addEventListener("click", e => {
 
   //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
   const telefono = "573112781551";
-
+  const telefono2 = "573104866092";
   const cliente = document.querySelector("#niños").value;
   const joven = document.querySelector("#joven").value;
   const total = document.querySelector("#total").value;
@@ -59,6 +59,23 @@ document.querySelector("#submit").addEventListener("click", e => {
   console.log(hora);
 
   const url = `https://api.whatsapp.com/send?phone=${telefono}&text=
+  *Hola, Pastor Luis Carlos Millan Envio Asistencia*%0A
+  *Fecha:* 
+  ${fecha}%0A
+  *Hora:* 
+  ${servicio}%0A
+  *Niños:*  
+  ${cliente}%0A
+  *Jóvenes:* 
+  ${joven}%0A
+  *Adultos:* 
+  ${hora}%0A
+  *Total:* 
+  ${total}%0A
+  *Coodinador:* 
+  ${empleado}`;
+  
+  const url = `https://api.whatsapp.com/send?phone=${telefono2}&text=
   *Hola, Pastor Luis Carlos Millan Envio Asistencia*%0A
   *Fecha:* 
   ${fecha}%0A
