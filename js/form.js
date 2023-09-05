@@ -72,7 +72,7 @@ document.querySelector("#submit").addEventListener("click", e => {
   ${hora}%0A
   *Total:* 
   ${total}%0A
-  *Coodinador:* 
+  *Coordinador:* 
   ${empleado}`;
   
  
