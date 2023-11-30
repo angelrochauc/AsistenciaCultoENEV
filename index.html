@@ -6,78 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Asistencia Culto</title>
-    <link href="diaconos.png" rel="icon">
   <link rel="stylesheet" href="css/estilos.css" />
- <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
 
 
-
-
-
-
+  </style>
 </head>
 
 <body>
 
   <form action="" class="formulario">
 
-
-
-
-    <img src="diaconos.png" class="imgLogo" id="imagen" />
+    <img src="diaconos.png" class="imgLogo" />
 
     <h1 class="formulario__titulo">Asistencia de Culto</h1>
     <h3 class="formulario__subtitulo">ICC Chapinero</h3>
     <div class="row">
       <div class="col-xs-6">
-       <!--HORA-->
-    <label for="servicio" class="formulario__label">Hora:</label>
-    <p id="servicio">--:--:--</p>
-        </div>
-         <div class="col-xs-6">
-        <!--fecha-->
-        <label for="fecha" class="formulario__label">Fecha:</label>
-        <p id="fecha">---</p>
-      </div>
-      <div class="col-xs-6">
-
         <label for="cliente" class="formulario__label">Niños:</label>
-        <input id="niños" type="number" class="formulario__input" oninput="sumar()" min="0" pattern="^[0-9]+" />
+        <input id="niños" type="number" class="formulario__input" oninput="sumar()" />
       </div>
       <div class="col-xs-6">
-        <label for="joven" class="formulario__label">Jóvenes:</label>
-        <input id="joven" type="number" class="formulario__input" oninput="sumar()" min="0" pattern="^[0-9]+" />
+        <label for="joven" class="formulario__label">Jovenes:</label>
+        <input id="joven" type="number" class="formulario__input" oninput="sumar()" />
       </div>
       <div class="col-xs-6">
         <label for="hora" class="formulario__label">Adultos:</label>
-        <input id="hora" type="number" class="formulario__input" oninput="sumar()" min="0" pattern="^[0-9]+" />
+        <input id="hora" type="number" class="formulario__input" oninput="sumar()" />
       </div>
       <div class="col-xs-6">
         <label for="total" class="formulario__label">Total:</label>
         <input id="total" type="number" class="formulario__input" readonly />
       </div>
-   
-      <div class="col-xs-6">
-        <label for="empleado" class="formulario__label">Coodinador:</label>
-        <select id="empleado" name="listaempleados" class="formulario__input">
-
-          <option>Yuli Gutierrez</option>
-          <option>Mario Vaca</option>
-          <option>Angel Rocha</option>
-          <option>Patricia Villafañe</option>
-        </select>
+      <div id="campoNombre" class="col-xs-6">
+        <label for="nombre" class="formulario__label">Nombre Diacono:</label>
+        <input type="text" id="nombre" class="formulario__input" />
       </div>
+      <div class="col-xs-6 hidden">
+        <label for="fecha" class="formulario__label">Fecha:</label>
+        <p id="fecha">---</p>
+      </div>
+
     </div>
-   
-
-
-
+    <div class="col-xs-6 hidden">
+    <label for="servicio" class="formulario__label ">Servicio:</label>
+    <p id="servicio">--:--:--</p>
+  </div>
     <div id="respuesta"></div>
 
     <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
   </form>
+
   <script src="js/form.js"></script>
+
+
 </body>
 
 </html>
