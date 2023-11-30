@@ -15,12 +15,16 @@
 
   <form action="" class="formulario">
 
+
+
+
     <img src="diaconos.png" class="imgLogo" />
 
     <h1 class="formulario__titulo">Asistencia de Culto</h1>
     <h3 class="formulario__subtitulo">ICC Chapinero</h3>
     <div class="row">
       <div class="col-xs-6">
+
         <label for="cliente" class="formulario__label">Niños:</label>
         <input id="niños" type="number" class="formulario__input" oninput="sumar()" />
       </div>
@@ -36,28 +40,34 @@
         <label for="total" class="formulario__label">Total:</label>
         <input id="total" type="number" class="formulario__input" readonly />
       </div>
-      <div id="campoNombre" class="col-xs-6">
-        <label for="nombre" class="formulario__label">Nombre Diacono:</label>
-        <input type="text" id="nombre" class="formulario__input" />
-      </div>
-      <div class="col-xs-6 hidden">
+      <div class="col-xs-6">
+        <!--fecha-->
         <label for="fecha" class="formulario__label">Fecha:</label>
         <p id="fecha">---</p>
       </div>
+      <div class="col-xs-6">
+        <label for="empleado" class="formulario__label">Coodinador:</label>
+        <select id="empleado" name="listaempleados" class="formulario__input">
 
+          <option>Yuli Gutierrez</option>
+          <option>Mario Vaca</option>
+          <option>Ariana Lopez</option>
+          <option>Angel Rocha</option>
+          <option>Patricia Villafañe</option>
+        </select>
+      </div>
     </div>
-    <div class="col-xs-6 hidden">
-    <label for="servicio" class="formulario__label ">Servicio:</label>
+    <!--HORA-->
+    <label for="servicio" class="formulario__label">Servicio:</label>
     <p id="servicio">--:--:--</p>
-  </div>
+
+
+
     <div id="respuesta"></div>
 
     <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
   </form>
-
   <script src="js/form.js"></script>
-
-
 </body>
 
 </html>
