@@ -4,7 +4,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background-image: url(fondo.jpg);
+
   background-size: 100vw 100vh;
   background-attachment: fixed;
 }
@@ -18,7 +18,9 @@ body {
   position: relative;
   background: rgba(255, 255, 255, 0.97);
 }
-
+.hidden {
+  display: none;
+}
 .imgLogo {
   width: 100px;
   height: 100px;
