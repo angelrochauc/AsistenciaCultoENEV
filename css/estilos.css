@@ -18,9 +18,7 @@ body {
   position: relative;
   background: rgba(255, 255, 255, 0.97);
 }
-.hidden {
-  display: none;
-}
+
 .imgLogo {
   width: 100px;
   height: 100px;
